@@ -1,0 +1,88 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.box{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: lefttoright 2s infinite;
+	position: relative;
+}
+@keyframes lefttoright{
+	
+	0%{
+	 left: 0px;
+	 top: 0px;
+	}
+
+	50%{
+	 left: 1000px;
+	 top: 0px;
+	}
+
+	100%{
+	  left: 0px;
+	  top: 0px;
+	}
+}
+.dot{
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	animation: lefttoright 2s infinite;
+	border-radius: 50%;
+}
+@keyframes lefttoright{
+	
+	0%{
+	 left: 0px;
+	 top: 0px;
+	}
+
+	50%{
+	 left: 500px;
+	 top: 0px;
+	}
+
+	100%{
+	  left: 0px;
+	  top: 0px;
+	}
+}
+h1{
+	position: absolute;
+	margin: 200px 0px 0px 800px;
+	font-size: 40px;
+	color: blue;
+	font-family: candara;
+	animation: boc 2s infinite;
+}
+@keyframes boc{
+	0%{
+	transform: scale(1);
+	color: black;
+	}
+	25%{
+	transform: scale(.5) rotate(45deg);
+	color: blue;
+	}
+	50%{
+	transform: scale(4);
+	color: red;
+	}
+	75%{
+	transform: scale(.5) rotate(-46deg);
+	color: yellow;
+	}
+	100%{
+	transform: scale(1);
+	color: orange;
+	}
+}
